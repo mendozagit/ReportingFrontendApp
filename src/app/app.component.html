@@ -1,5 +1,3 @@
-<div>
-  <dx-report-designer [reportUrl]="reportName" height="700px" >
-      <dxrd-request-options [getDesignerModelAction]="getDesignerModelAction" [host]="host"></dxrd-request-options>
-  </dx-report-designer>
-</div>
+<button (click)="onReportDesignerClick()">Report Designer</button>
+<button (click)="onReportViewerClick()">Report Viewer</button>
+<router-outlet></router-outlet>

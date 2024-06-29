@@ -1,0 +1,15 @@
+<div>
+  <button (click)="print()"><span>Print</span></button>
+</div>
+
+ <div>
+    <dx-report-viewer [reportUrl]="reportName" height="800px" cssClass='myViewer'>
+        <dxrv-request-options [invokeAction]="invokeAction" [host]="host"></dxrv-request-options>
+        <dxrv-tabpanel-settings [width]="500" position="Left"></dxrv-tabpanel-settings>
+        <dxrv-export-settings [useSameTab]="false" [useAsynchronousExport]="false"></dxrv-export-settings>
+        <dxrv-search-settings [useAsyncSearch]="false"></dxrv-search-settings>
+        <dxrv-callbacks
+        (CustomizeMenuActions)="CustomizeMenuActions($event)">
+        </dxrv-callbacks>
+    </dx-report-viewer>
+</div>
