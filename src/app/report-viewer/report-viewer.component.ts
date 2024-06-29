@@ -34,12 +34,12 @@ export class ReportViewerComponent {
 
     CustomizeMenuActions(event: any) {
         // Hide the "Print" and "PrintPage" actions.
-        var printAction = event.args.GetById(ActionId.Print);
-        if (printAction)
-            printAction.visible = false;
-        var printPageAction = event.args.GetById(ActionId.PrintPage);
-        if (printPageAction)
-            printPageAction.visible = false;
+        // var printAction = event.args.GetById(ActionId.Print);
+        // if (printAction)
+        //     printAction.visible = false;
+        // var printPageAction = event.args.GetById(ActionId.PrintPage);
+        // if (printPageAction)
+        //     printPageAction.visible = false;
     }
 
     print() {
