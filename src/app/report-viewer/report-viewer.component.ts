@@ -33,6 +33,11 @@ export class ReportViewerComponent {
     invokeAction: string = '/DXXRDV';
 
     CustomizeMenuActions(event: any) {
+        // Hide the "ExportTo" action.
+        // var exportToAction = event.args.GetById(ActionId.ExportTo);
+        // if (exportToAction)
+        //     exportToAction.visible = false;
+
         // Hide the "Print" and "PrintPage" actions.
         // var printAction = event.args.GetById(ActionId.Print);
         // if (printAction)
@@ -43,10 +48,10 @@ export class ReportViewerComponent {
     }
 
     print() {
-        this.viewer.bindingSender.Print(1);
+        this.viewer.bindingSender.Print(2);
     }
 
-    reportName = "Report1";
+    reportName = "Report4";
     // The backend application URL.
     host = 'https://localhost:7071/';
 
