@@ -9,7 +9,10 @@
         <dxrv-export-settings [useSameTab]="false" [useAsynchronousExport]="false"></dxrv-export-settings>
         <dxrv-search-settings [useAsyncSearch]="false"></dxrv-search-settings>
         <dxrv-callbacks
-          (CustomizeMenuActions)="CustomizeMenuActions($event)">
+          (CustomizeMenuActions)="CustomizeMenuActions($event)"
+          (ParametersInitialized)="OnParametersInitialized($event)"
+          (ParametersSubmitted)="OnParametersSubmitted($event)"
+          >
         </dxrv-callbacks>
     </dx-report-viewer>
 </div>
